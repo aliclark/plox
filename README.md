@@ -15,7 +15,7 @@
 
 ### Processes
 
-An executable file is executed with 0 parameters, and stdin containing all request data including data that would typically be considered "options".
+An executable file is executed with no options or arguments, and stdin containing all request data including data that would typically be considered "options".
 
 Chunking may need to be supported for input data larger than 4 megabytes.
 
