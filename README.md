@@ -1,8 +1,9 @@
 # plox
-## Like Plan 9, but everything is a request and response
+## Like Plan 9, but everything is request and response
 
-```
-Request: <=6MB data
-Command: a resource type and path (no query parameters), eg. file:/usr/bin/plonxgrep or https:api.foo.com/some/resource/here
-Response: <=1MB data
-```
+* Requests may contain any data
+* Requests must be less than or equal to 4MiB in size
+* Requests should be less than or equal to 4MB in size
+* Receivers must be a resource type and path with no query parameters. For example file:/usr/bin/plonxgrep or https:api.example.com/some/resource/here
+* Responses must be returned within 15s
+* Responses should be returned within 10s
