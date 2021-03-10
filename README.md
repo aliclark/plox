@@ -21,6 +21,10 @@ Chunking will need to be implemented to support input data larger than 4 megabyt
 
 May be implemented in terms of existing commands which do take options.
 
+This method is not *Open Group Base Specifications* compliant.
+
+This method is portable.
+
 ### QUIC or HTTPS
 
 POST data representing a request to a URL containing no query parameters, and body containing all request data including data that would typically be considered "query parameters".
