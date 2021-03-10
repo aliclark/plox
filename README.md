@@ -1,5 +1,5 @@
 # plox
-## Like Plan 9, but everything is request and response
+## Plan 9, but everything is request and response
 
 ### Requirements
 
