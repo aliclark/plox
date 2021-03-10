@@ -21,7 +21,7 @@ Chunking may need to be supported for input data larger than 4 megabytes.
 
 May be implemented in terms of existing commands which do take options.
 
-### HTTPS
+### QUIC or HTTPS
 
 POST data representing a request to a URL containing no query parameters.
 
