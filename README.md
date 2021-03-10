@@ -17,13 +17,15 @@
 
 An executable file is executed with no options or arguments, and stdin containing all request data including data that would typically be considered "options".
 
-Chunking may need to be supported for input data larger than 4 megabytes.
+Chunking will need to be implemented to support input data larger than 4 megabytes.
 
 May be implemented in terms of existing commands which do take options.
 
 ### QUIC or HTTPS
 
-POST data representing a request to a URL containing no query parameters.
+POST data representing a request to a URL containing no query parameters, and body containing all request data including data that would typically be considered "query parameters".
+
+Chunking will need to be implemented to support input data larger than 4 megabytes.
 
 May be implemented in terms of other requests, such as GET or HEAD, or POST with parameters in the query string.
 
