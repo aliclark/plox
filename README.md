@@ -3,6 +3,6 @@
 
 ```
 Request: <=6MB data
-Command: a communication and path (no query parameters), eg. file:/usr/bin/plonxgrep or https:api.foo.com/some/resource/here
+Command: a resource type and path (no query parameters), eg. file:/usr/bin/plonxgrep or https:api.foo.com/some/resource/here
 Response: <=1MB data
 ```
