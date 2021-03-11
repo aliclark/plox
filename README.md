@@ -36,12 +36,14 @@ May be implemented in terms of other requests, such as GET or HEAD, or POST with
 
 This method is not REST-ful.
 
-This method is compatible with GraphQL.
+This method is compatible with HTTP 1, 2 and 3, QUIC, JSON, GraphQL.
 
 ## Authentication and Authorization
 
-* Authentication and/or authorization (authz) data must have appropriate expiration times set
+* Cryptographic, authentication and authorization (authz) data must have appropriate expiration times set
 * authz data sent to the receiver should be outside of the request or path
   * For example, it may instead be sent via HTTP Authorization header, or via file descriptor number 3
   * Discretionary Access Control may be implemented using paths containing authz data
-* authz data may be contained within the response
+* authz data may be contained within the response body
+* Secrets data (such as passwords and API keys) should be used only to retrieve authz data
+* Secrets data may be sent in the request body
