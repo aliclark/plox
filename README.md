@@ -16,7 +16,7 @@
 
 ### Processes
 
-An executable file is executed with no options or arguments, and stdin containing all request data including data that would typically be considered "options".
+An executable file is executed with no options or arguments, and stdin containing all request data including data that would typically be considered "options". stdout should contain all response data but should not contain logging output. Logging output may be directed to stderr instead.
 
 Chunking will need to be implemented to support input data larger than 4 megabytes.
 
