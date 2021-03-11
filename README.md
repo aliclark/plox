@@ -10,6 +10,7 @@
 * Receivers must be a resource type and path with no query parameters. For example `file:/usr/bin/ploxgrep` or `https:api.example.com/some/resource/here`
 * Responses must be returned within 15s
 * Responses should be returned within 10s
+* The client should assume that if 15s have elapsed since the request was sent that the request has failed
 
 ## Implementation methods
 
