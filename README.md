@@ -46,4 +46,4 @@ This method is compatible with HTTP 1, 2 and 3, QUIC, JSON, GraphQL.
   * Discretionary Access Control may be implemented using paths containing authz data
 * authz data may be contained within the response body
 * Secrets data (such as passwords and API keys) should be used only to retrieve authz data
-* Secrets data may be sent in the request body
+  * In this case, secrets data may be sent in the request body
